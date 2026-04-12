@@ -4,7 +4,7 @@ class Api::V1::EventsController < ApplicationController
   def create
     event = Event.new(event_params)
 
-    event.cost = calculate_cost(event)
+    event.cost = CostCalculator.call(event)
 
     if event.save
       render json: { status: "ok", cost: event.cost }
@@ -34,14 +34,8 @@ class Api::V1::EventsController < ApplicationController
     )
   end
 
-  def calculate_cost(event)
-    pricing = {
-      "gpt-4" => { input: 0.03, output: 0.06 }
-    }
-
-    model_price = pricing[event.model] || { input: 0, output: 0 }
-
-    ((event.input_tokens.to_i / 1000.0) * model_price[:input]) +
-    ((event.output_tokens.to_i / 1000.0) * model_price[:output])
+  def pricing
+    provider_pricing = PRICING[event.provider] || {}
+    provider_pricing[event.model] || default_pricing
   end
 end
