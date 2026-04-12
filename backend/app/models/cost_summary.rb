@@ -1,0 +1,2 @@
+class CostSummary < ApplicationRecord
+end
