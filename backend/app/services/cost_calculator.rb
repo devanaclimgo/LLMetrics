@@ -25,8 +25,8 @@ class CostCalculator
   attr_reader :event
 
   def pricing
-    provider = event.provider.to_s.downcase
-    model = event.model.to_s.downcase
+    provider = event.provider.to_s.downcase.strip
+    model = event.model.to_s.downcase.strip
 
     provider_pricing = PRICING[provider]
 
