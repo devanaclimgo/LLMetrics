@@ -198,7 +198,7 @@ const features = [
   }
 ]
 
-function FeatureCard({ feature }: { feature: typeof features[0]; index: number }) {
+function FeatureCard({ feature }: { feature: typeof features[0] }) {
   const Icon = feature.icon
   
   return (
@@ -353,8 +353,8 @@ export default function LandingPage() {
               initial="hidden"
               animate={featuresInView ? "visible" : "hidden"}
             >
-              {features.map((feature, index) => (
-                <FeatureCard key={feature.title} feature={feature} index={index} />
+              {features.map((feature) => (
+                <FeatureCard key={feature.title} feature={feature}/>
               ))}
             </motion.div>
           </div>
