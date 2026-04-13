@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       resources :events, only: [:create]
       get "dashboard", to: "dashboard#index"
       get "cost_over_time", to: "dashboard#cost_over_time"
+      get "insights", to: "dashboard#insights"
     end
   end
 end
