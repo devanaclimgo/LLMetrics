@@ -33,9 +33,4 @@ class Api::V1::EventsController < ApplicationController
       metadata: {}
     )
   end
-
-  def pricing
-    provider_pricing = PRICING[event.provider] || {}
-    provider_pricing[event.model] || default_pricing
-  end
 end
