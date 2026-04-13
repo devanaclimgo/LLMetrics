@@ -1,18 +1,14 @@
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./style.css";
-import App from "./App";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import LandingPage from "./pages/LandingPage"
+import LoginPage from "./pages/login/page"
+import SignupPage from "./pages/signup/page"
+import Dashboard from "./pages/Dashboard"
 
-const rootElement = document.getElementById("root");
-
-if (!rootElement) {
-  throw new Error("Root element not found");
-}
-
-ReactDOM.createRoot(rootElement).render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />} />
-    </Routes>
-  </BrowserRouter>
-);
+<BrowserRouter>
+  <Routes>
+    <Route path="/" element={<LandingPage />} />
+    <Route path="/login" element={<LoginPage />} />
+    <Route path="/signup" element={<SignupPage />} />
+    <Route path="/dashboard" element={<Dashboard />} />
+  </Routes>
+</BrowserRouter>
