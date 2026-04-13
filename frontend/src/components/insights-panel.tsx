@@ -1,7 +1,7 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
 import { AlertTriangle, Lightbulb, Info } from "lucide-react";
-import { cn } from "@/lib/utils";
-import { useDashboardData } from "@/hooks/use-dashboard-data";
+import { cn } from "../lib/utils";
+import { useDashboardData } from "../hooks/use-dashboard-data";
 
 const iconMap = {
   warning: AlertTriangle,

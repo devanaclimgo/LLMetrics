@@ -4,7 +4,7 @@ import { CostChart } from "../components/cost-chart";
 import { FeatureTable } from "../components/feature-table";
 import { InsightsPanel } from "../components/insights-panel";
 import { DollarSign, Activity, TrendingDown } from "lucide-react";
-import { useDashboardData } from "@/hooks/use-dashboard-data";
+import { useDashboardData } from "../hooks/use-dashboard-data";
 import { DashboardSkeleton } from "./DashboardSkeleton";
 
 export default function Dashboard() {

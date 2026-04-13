@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Eye, EyeOff, Copy, Check } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
 
 export function DashboardHeader() {
   const [showKey, setShowKey] = useState(false);
