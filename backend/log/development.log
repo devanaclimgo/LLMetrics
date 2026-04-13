@@ -185,3 +185,570 @@ Filter chain halted as :authenticate! rendered or redirected
 Completed 401 Unauthorized in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
 
 
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 14:43:40 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 14:43:40 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 14:43:40 -0300
+Processing by Api::V1::DashboardController#index as */*
+Processing by Api::V1::DashboardController#insights as */*
+Processing by Api::V1::DashboardController#cost_over_time as */*
+  [1m[36mApiKey Load (29.4ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'undefined' LIMIT 1 /*action='index',application='Backend',controller='dashboard'*/[0m
+  [1m[36mApiKey Load (16.4ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'undefined' LIMIT 1 /*action='cost_over_time',application='Backend',controller='dashboard'*/[0m
+  [1m[36mApiKey Load (29.0ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'undefined' LIMIT 1 /*action='insights',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Filter chain halted as :authenticate! rendered or redirected
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 41ms (Views: 0.5ms | ActiveRecord: 29.4ms (1 query, 0 cached) | GC: 9.8ms)
+
+
+Completed 401 Unauthorized in 36ms (Views: 0.0ms | ActiveRecord: 29.0ms (1 query, 0 cached) | GC: 9.8ms)
+
+
+Completed 401 Unauthorized in 24ms (Views: 0.0ms | ActiveRecord: 16.4ms (1 query, 0 cached) | GC: 2.8ms)
+
+
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 14:43:58 -0300
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 14:43:58 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 14:43:58 -0300
+Processing by Api::V1::DashboardController#index as */*
+Processing by Api::V1::DashboardController#cost_over_time as */*
+Processing by Api::V1::DashboardController#insights as */*
+  [1m[36mApiKey Load (2.0ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='cost_over_time',application='Backend',controller='dashboard'*/[0m
+  [1m[36mApiKey Load (17.9ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='index',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+  [1m[36mApiKey Load (10.2ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='insights',application='Backend',controller='dashboard'*/[0m
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 13ms (Views: 0.3ms | ActiveRecord: 2.0ms (1 query, 0 cached) | GC: 3.6ms)
+
+
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Completed 401 Unauthorized in 48ms (Views: 0.0ms | ActiveRecord: 17.9ms (1 query, 0 cached) | GC: 5.4ms)
+
+
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 18ms (Views: 0.2ms | ActiveRecord: 10.2ms (1 query, 0 cached) | GC: 6.4ms)
+
+
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 14:44:12 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 14:44:12 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 14:44:12 -0300
+Processing by Api::V1::DashboardController#cost_over_time as */*
+Processing by Api::V1::DashboardController#index as */*
+  [1m[36mApiKey Load (5.8ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='cost_over_time',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+  [1m[36mApiKey Load (11.4ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='index',application='Backend',controller='dashboard'*/[0m
+Completed 401 Unauthorized in 18ms (Views: 1.9ms | ActiveRecord: 5.7ms (1 query, 0 cached) | GC: 3.1ms)
+
+
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Processing by Api::V1::DashboardController#insights as */*
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 71ms (Views: 0.2ms | ActiveRecord: 11.4ms (1 query, 0 cached) | GC: 5.0ms)
+
+
+  [1m[36mApiKey Load (3.3ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='insights',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 10ms (Views: 0.1ms | ActiveRecord: 3.3ms (1 query, 0 cached) | GC: 1.7ms)
+
+
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 14:44:12 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 14:44:12 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 14:44:12 -0300
+Processing by Api::V1::DashboardController#insights as */*
+Processing by Api::V1::DashboardController#index as */*
+  [1m[36mApiKey Load (1.3ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='insights',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 5ms (Views: 0.3ms | ActiveRecord: 1.3ms (1 query, 0 cached) | GC: 2.0ms)
+
+
+  [1m[36mApiKey Load (3.4ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='index',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Processing by Api::V1::DashboardController#cost_over_time as */*
+Completed 401 Unauthorized in 7ms (Views: 0.1ms | ActiveRecord: 3.4ms (1 query, 0 cached) | GC: 2.2ms)
+
+
+  [1m[36mApiKey Load (0.4ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='cost_over_time',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 19ms (Views: 0.1ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 12.8ms)
+
+
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 14:44:16 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 14:44:16 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 14:44:16 -0300
+Processing by Api::V1::DashboardController#insights as */*
+  Parameters: {"dashboard" => {}}
+Processing by Api::V1::DashboardController#index as */*
+  Parameters: {"dashboard" => {}}
+Processing by Api::V1::DashboardController#cost_over_time as */*
+  Parameters: {"dashboard" => {}}
+  [1m[36mApiKey Load (3.0ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='insights',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 5ms (Views: 0.1ms | ActiveRecord: 3.0ms (1 query, 0 cached) | GC: 1.0ms)
+
+
+  [1m[36mApiKey Load (4.2ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='index',application='Backend',controller='dashboard'*/[0m
+  [1m[36mApiKey Load (3.9ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='cost_over_time',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 6ms (Views: 0.1ms | ActiveRecord: 4.2ms (1 query, 0 cached) | GC: 1.0ms)
+
+
+Completed 401 Unauthorized in 6ms (Views: 0.0ms | ActiveRecord: 3.9ms (1 query, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 14:44:17 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 14:44:17 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 14:44:17 -0300
+Processing by Api::V1::DashboardController#index as */*
+  Parameters: {"dashboard" => {}}
+Processing by Api::V1::DashboardController#cost_over_time as */*
+  Parameters: {"dashboard" => {}}
+  [1m[36mApiKey Load (0.5ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='index',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+  [1m[36mApiKey Load (0.6ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='cost_over_time',application='Backend',controller='dashboard'*/[0m
+Filter chain halted as :authenticate! rendered or redirected
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Processing by Api::V1::DashboardController#insights as */*
+Completed 401 Unauthorized in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Filter chain halted as :authenticate! rendered or redirected
+  Parameters: {"dashboard" => {}}
+Completed 401 Unauthorized in 4ms (Views: 0.1ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+  [1m[36mApiKey Load (0.5ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='insights',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.1ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 14:44:17 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 14:44:17 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 14:44:17 -0300
+Processing by Api::V1::DashboardController#insights as */*
+Processing by Api::V1::DashboardController#index as */*
+Processing by Api::V1::DashboardController#cost_over_time as */*
+  Parameters: {"dashboard" => {}}
+  Parameters: {"dashboard" => {}}
+  Parameters: {"dashboard" => {}}
+  [1m[36mApiKey Load (0.6ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='insights',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+  [1m[36mApiKey Load (1.0ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='index',application='Backend',controller='dashboard'*/[0m
+  [1m[36mApiKey Load (0.8ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='cost_over_time',application='Backend',controller='dashboard'*/[0m
+Filter chain halted as :authenticate! rendered or redirected
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Completed 401 Unauthorized in 2ms (Views: 0.1ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Filter chain halted as :authenticate! rendered or redirected
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.0ms | ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Completed 401 Unauthorized in 3ms (Views: 0.0ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 14:44:23 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 14:44:23 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 14:44:23 -0300
+Processing by Api::V1::DashboardController#index as */*
+  Parameters: {"dashboard" => {}}
+Processing by Api::V1::DashboardController#cost_over_time as */*
+  Parameters: {"dashboard" => {}}
+  [1m[36mApiKey Load (4.0ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='index',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+  [1m[36mApiKey Load (2.6ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='cost_over_time',application='Backend',controller='dashboard'*/[0m
+Processing by Api::V1::DashboardController#insights as */*
+Filter chain halted as :authenticate! rendered or redirected
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+  Parameters: {"dashboard" => {}}
+Completed 401 Unauthorized in 14ms (Views: 0.6ms | ActiveRecord: 4.0ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 11ms (Views: 0.5ms | ActiveRecord: 2.5ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+  [1m[36mApiKey Load (7.3ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='insights',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 9ms (Views: 0.1ms | ActiveRecord: 7.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 14:44:27 -0300
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 14:44:27 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 14:44:27 -0300
+Processing by Api::V1::DashboardController#cost_over_time as */*
+  Parameters: {"dashboard" => {}}
+Processing by Api::V1::DashboardController#insights as */*
+  Parameters: {"dashboard" => {}}
+  [1m[36mApiKey Load (0.9ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='cost_over_time',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Processing by Api::V1::DashboardController#index as */*
+  [1m[36mApiKey Load (1.4ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='insights',application='Backend',controller='dashboard'*/[0m
+Filter chain halted as :authenticate! rendered or redirected
+  Parameters: {"dashboard" => {}}
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Completed 401 Unauthorized in 11ms (Views: 0.1ms | ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 1.7ms)
+
+
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 17ms (Views: 0.8ms | ActiveRecord: 1.4ms (1 query, 0 cached) | GC: 1.7ms)
+
+
+  [1m[36mApiKey Load (7.9ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='index',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 17ms (Views: 0.5ms | ActiveRecord: 7.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 14:45:13 -0300
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 14:45:13 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 14:45:13 -0300
+Processing by Api::V1::DashboardController#cost_over_time as */*
+  Parameters: {"dashboard" => {}}
+Processing by Api::V1::DashboardController#insights as */*
+  Parameters: {"dashboard" => {}}
+Processing by Api::V1::DashboardController#index as */*
+  Parameters: {"dashboard" => {}}
+  [1m[36mApiKey Load (1.1ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='cost_over_time',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+  [1m[36mApiKey Load (1.2ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='insights',application='Backend',controller='dashboard'*/[0m
+Filter chain halted as :authenticate! rendered or redirected
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+  [1m[36mApiKey Load (2.1ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='index',application='Backend',controller='dashboard'*/[0m
+Completed 401 Unauthorized in 5ms (Views: 0.3ms | ActiveRecord: 1.0ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Filter chain halted as :authenticate! rendered or redirected
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Completed 401 Unauthorized in 4ms (Views: 0.0ms | ActiveRecord: 1.2ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 5ms (Views: 0.1ms | ActiveRecord: 2.1ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 14:45:13 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 14:45:13 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 14:45:13 -0300
+Processing by Api::V1::DashboardController#index as */*
+  Parameters: {"dashboard" => {}}
+Processing by Api::V1::DashboardController#cost_over_time as */*
+  Parameters: {"dashboard" => {}}
+  [1m[36mApiKey Load (0.4ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='index',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mApiKey Load (0.7ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='cost_over_time',application='Backend',controller='dashboard'*/[0m
+Processing by Api::V1::DashboardController#insights as */*
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+  Parameters: {"dashboard" => {}}
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.1ms | ActiveRecord: 0.7ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mApiKey Load (1.2ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='insights',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.1ms | ActiveRecord: 1.2ms (1 query, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 14:45:20 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 14:45:20 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 14:45:20 -0300
+Processing by Api::V1::DashboardController#cost_over_time as */*
+  Parameters: {"dashboard" => {}}
+Processing by Api::V1::DashboardController#index as */*
+  Parameters: {"dashboard" => {}}
+  [1m[36mApiKey Load (2.0ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='cost_over_time',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 9ms (Views: 0.2ms | ActiveRecord: 2.0ms (1 query, 0 cached) | GC: 1.1ms)
+
+
+  [1m[36mApiKey Load (2.4ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='index',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 4ms (Views: 0.1ms | ActiveRecord: 2.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::V1::DashboardController#insights as */*
+  Parameters: {"dashboard" => {}}
+  [1m[36mApiKey Load (0.4ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='insights',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 14:45:22 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 14:45:22 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 14:45:22 -0300
+Processing by Api::V1::DashboardController#insights as */*
+  Parameters: {"dashboard" => {}}
+Processing by Api::V1::DashboardController#index as */*
+  Parameters: {"dashboard" => {}}
+  [1m[36mApiKey Load (0.9ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='insights',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.1ms | ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mApiKey Load (1.5ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='index',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Processing by Api::V1::DashboardController#cost_over_time as */*
+Filter chain halted as :authenticate! rendered or redirected
+  Parameters: {"dashboard" => {}}
+Completed 401 Unauthorized in 4ms (Views: 0.1ms | ActiveRecord: 1.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mApiKey Load (0.4ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='cost_over_time',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 14:46:06 -0300
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 14:46:06 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 14:46:06 -0300
+Processing by Api::V1::DashboardController#insights as */*
+  Parameters: {"dashboard" => {}}
+Processing by Api::V1::DashboardController#index as */*
+  Parameters: {"dashboard" => {}}
+  [1m[36mApiKey Load (1.1ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='insights',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 6ms (Views: 0.7ms | ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::V1::DashboardController#cost_over_time as */*
+  [1m[36mApiKey Load (3.4ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='index',application='Backend',controller='dashboard'*/[0m
+  Parameters: {"dashboard" => {}}
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 7ms (Views: 0.1ms | ActiveRecord: 3.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mApiKey Load (0.4ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='cost_over_time',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 14:46:20 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 14:46:20 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 14:46:20 -0300
+Processing by Api::V1::DashboardController#insights as */*
+  Parameters: {"dashboard" => {}}
+Processing by Api::V1::DashboardController#index as */*
+  Parameters: {"dashboard" => {}}
+Processing by Api::V1::DashboardController#cost_over_time as */*
+  Parameters: {"dashboard" => {}}
+  [1m[36mApiKey Load (1.8ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='insights',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+  [1m[36mApiKey Load (3.8ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='index',application='Backend',controller='dashboard'*/[0m
+Completed 401 Unauthorized in 6ms (Views: 0.3ms | ActiveRecord: 1.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mApiKey Load (3.9ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='cost_over_time',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 9ms (Views: 0.1ms | ActiveRecord: 3.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Completed 401 Unauthorized in 8ms (Views: 0.0ms | ActiveRecord: 3.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 14:46:39 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 14:46:39 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 14:46:39 -0300
+Processing by Api::V1::DashboardController#insights as */*
+  Parameters: {"dashboard" => {}}
+Processing by Api::V1::DashboardController#index as */*
+  Parameters: {"dashboard" => {}}
+Processing by Api::V1::DashboardController#cost_over_time as */*
+  Parameters: {"dashboard" => {}}
+  [1m[36mApiKey Load (24.4ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='index',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 27ms (Views: 0.5ms | ActiveRecord: 24.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mApiKey Load (28.0ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='insights',application='Backend',controller='dashboard'*/[0m
+  [1m[36mApiKey Load (27.6ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='cost_over_time',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 34ms (Views: 0.3ms | ActiveRecord: 28.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Completed 401 Unauthorized in 31ms (Views: 0.1ms | ActiveRecord: 27.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 14:46:40 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 14:46:40 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 14:46:40 -0300
+Processing by Api::V1::DashboardController#insights as */*
+  Parameters: {"dashboard" => {}}
+Processing by Api::V1::DashboardController#cost_over_time as */*
+  Parameters: {"dashboard" => {}}
+  [1m[36mApiKey Load (0.5ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='insights',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mApiKey Load (0.8ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='cost_over_time',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Processing by Api::V1::DashboardController#index as */*
+Filter chain halted as :authenticate! rendered or redirected
+  Parameters: {"dashboard" => {}}
+Completed 401 Unauthorized in 25ms (Views: 0.1ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 17.1ms)
+
+
+  [1m[36mApiKey Load (0.3ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='index',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 14:46:43 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 14:46:43 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 14:46:43 -0300
+Processing by Api::V1::DashboardController#cost_over_time as */*
+  Parameters: {"dashboard" => {}}
+Processing by Api::V1::DashboardController#index as */*
+  Parameters: {"dashboard" => {}}
+Processing by Api::V1::DashboardController#insights as */*
+  Parameters: {"dashboard" => {}}
+  [1m[36mApiKey Load (0.8ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='cost_over_time',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+  [1m[36mApiKey Load (0.8ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='index',application='Backend',controller='dashboard'*/[0m
+Filter chain halted as :authenticate! rendered or redirected
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+  [1m[36mApiKey Load (2.0ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='insights',application='Backend',controller='dashboard'*/[0m
+Completed 401 Unauthorized in 3ms (Views: 0.1ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.9ms)
+
+
+Filter chain halted as :authenticate! rendered or redirected
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Completed 401 Unauthorized in 3ms (Views: 0.0ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.9ms)
+
+
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 4ms (Views: 0.1ms | ActiveRecord: 2.0ms (1 query, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 14:46:44 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 14:46:44 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 14:46:44 -0300
+Processing by Api::V1::DashboardController#index as */*
+  Parameters: {"dashboard" => {}}
+Processing by Api::V1::DashboardController#insights as */*
+  Parameters: {"dashboard" => {}}
+  [1m[36mApiKey Load (1.6ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='index',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 4ms (Views: 0.1ms | ActiveRecord: 1.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mApiKey Load (1.3ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='insights',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Processing by Api::V1::DashboardController#cost_over_time as */*
+Filter chain halted as :authenticate! rendered or redirected
+  Parameters: {"dashboard" => {}}
+Completed 401 Unauthorized in 6ms (Views: 0.1ms | ActiveRecord: 1.3ms (1 query, 0 cached) | GC: 0.8ms)
+
+
+  [1m[36mApiKey Load (0.3ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='cost_over_time',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 14:49:41 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 14:49:41 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 14:49:41 -0300
+Processing by Api::V1::DashboardController#index as */*
+  Parameters: {"dashboard" => {}}
+Processing by Api::V1::DashboardController#cost_over_time as */*
+  Parameters: {"dashboard" => {}}
+Processing by Api::V1::DashboardController#insights as */*
+  Parameters: {"dashboard" => {}}
+  [1m[36mApiKey Load (12.4ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='insights',application='Backend',controller='dashboard'*/[0m
+  [1m[36mApiKey Load (14.0ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='index',application='Backend',controller='dashboard'*/[0m
+  [1m[36mApiKey Load (13.0ms)[0m  [1m[34mSELECT "api_keys".* FROM "api_keys" WHERE "api_keys"."token" = 'sk-llm-abcd1234efgh5678ijkl9012mnop3x9f' LIMIT 1 /*action='cost_over_time',application='Backend',controller='dashboard'*/[0m
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+  ↳ app/controllers/api/v1/dashboard_controller.rb:125:in 'Api::V1::DashboardController#authenticate!'
+Filter chain halted as :authenticate! rendered or redirected
+Filter chain halted as :authenticate! rendered or redirected
+Filter chain halted as :authenticate! rendered or redirected
+Completed 401 Unauthorized in 16ms (Views: 0.6ms | ActiveRecord: 12.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Completed 401 Unauthorized in 19ms (Views: 0.0ms | ActiveRecord: 14.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Completed 401 Unauthorized in 17ms (Views: 0.0ms | ActiveRecord: 13.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7700968717135806420) /*application='Backend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Backend'*/[0m
+Migrating to DeviseCreateUsers (20260413175626)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='Backend'*/[0m
+  [1m[35m (14.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp(6), "remember_created_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='Backend'*/[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email") /*application='Backend'*/[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token") /*application='Backend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20260413175626') RETURNING "version" /*application='Backend'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT /*application='Backend'*/[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7700968717135806420) /*application='Backend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='Backend'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO "$user", public /*application='Backend'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='Backend'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO "$user", public /*application='Backend'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7700968717135806420) /*application='Backend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Backend'*/[0m
+Migrating to AddApiKeyToUsers (20260413175741)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='Backend'*/[0m
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "users" ADD "api_key" character varying /*application='Backend'*/[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_api_key" ON "users" ("api_key") /*application='Backend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20260413175741') RETURNING "version" /*application='Backend'*/[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT /*application='Backend'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7700968717135806420) /*application='Backend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='Backend'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO "$user", public /*application='Backend'*/[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mSET search_path TO public /*application='Backend'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO "$user", public /*application='Backend'*/[0m
+Started GET "/" for ::1 at 2026-04-13 15:42:16 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/anaclimgo/.local/share/mise/installs/ruby/3.4.7/lib/ruby/gems/3.4.0/gems/railties-8.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/anaclimgo/.local/share/mise/installs/ruby/3.4.7/lib/ruby/gems/3.4.0/gems/railties-8.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 1.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
