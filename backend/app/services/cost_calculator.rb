@@ -25,7 +25,14 @@ class CostCalculator
   attr_reader :event
 
   def pricing
-    PRICING[event.model] || default_pricing
+    provider = event.provider.to_s.downcase
+    model = event.model.to_s.downcase
+
+    provider_pricing = PRICING[provider]
+
+    return default_pricing unless provider_pricing
+
+    provider_pricing[model] || default_pricing
   end
 
   def default_pricing
