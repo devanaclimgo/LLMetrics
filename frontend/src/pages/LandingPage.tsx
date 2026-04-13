@@ -168,33 +168,33 @@ const itemVariants = {
 const features = [
   {
     icon: DollarSign,
-    title: "Rastreamento de Custos",
-    description: "Monitore gastos por modelo, endpoint e funcionalidade. Visualize custos em tempo real e historicos."
+    title: "Cost Monitoring",
+    description: "Monitor expenses by model, endpoint and functionality. Visualize costs in real-time and history."
   },
   {
     icon: LineChart,
     title: "Detailed Analytics",
-    description: "Graficos interativos e metricas detalhadas para entender padroes de uso e identificar oportunidades de economia."
+    description: "Interactive charts and detailed metrics to understand usage patterns and identify opportunities for cost savings."
   },
   {
     icon: Bell,
-    title: "Alertas Inteligentes",
-    description: "Receba notificacoes quando custos excedem limites ou quando detectamos anomalias no uso."
+    title: "Smart Alerts",
+    description: "Receive notifications when costs exceed limits or when we detect anomalies in usage."
   },
   {
     icon: BarChart3,
-    title: "Comparacao de Modelos",
-    description: "Compare custos e performance entre diferentes modelos para escolher a melhor opcao para cada caso."
+    title: "Model Comparison",
+    description: "Compare costs and performance between different models to choose the best option for each case."
   },
   {
     icon: Code2,
-    title: "Integracao Simples",
-    description: "SDK leve e API REST para integrar com qualquer aplicacao. Suporte a OpenAI, Anthropic, Cohere e mais."
+    title: "Simple Integration",
+    description: "Lightweight SDK and REST API to integrate with any application. Support for OpenAI, Anthropic, Cohere and more."
   },
   {
     icon: Zap,
-    title: "Insights Automaticos",
-    description: "Sugestoes automaticas de otimizacao baseadas no seu padrao de uso e melhores praticas do mercado."
+    title: "Automatic Insights",
+    description: "Automated optimization suggestions based on your usage patterns and industry best practices."
   }
 ]
 
@@ -261,11 +261,11 @@ export default function LandingPage() {
           </Link>
           <div className="flex items-center gap-4">
             <Button variant="ghost" asChild>
-              <Link to="/login">Entrar</Link>
+              <Link to="/login">Login</Link>
             </Button>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button asChild>
-                <Link to="/signup">Criar Conta</Link>
+                <Link to="/signup">Create Account</Link>
               </Button>
             </motion.div>
           </div>
@@ -291,17 +291,16 @@ export default function LandingPage() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
               </span>
-              Novo: Suporte a Claude 3.5 e GPT-4 Turbo
+              New: Support for Claude 3.5 and GPT-4 Turbo
             </motion.div>
             <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-              Monitore seus custos de IA{" "}
+              Monitor your AI costs{" "}
               <span className="bg-gradient-to-r from-primary via-primary/80 to-primary bg-clip-text text-transparent">
-                em tempo real
+                in real-time
               </span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg text-muted-foreground">
-              Obtenha visibilidade completa sobre o uso e custos das suas APIs de LLM. 
-              Identifique gargalos, otimize gastos e tome decisoes baseadas em dados.
+              Gain complete visibility into the usage and costs of your LLM APIs. Identify bottlenecks, optimize spending, and make data-driven decisions.
             </p>
             <motion.div 
               className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
@@ -312,14 +311,14 @@ export default function LandingPage() {
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button size="lg" className="group" asChild>
                   <Link to="/signup">
-                    Comece Gratuitamente
+                    Start Free
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button variant="outline" size="lg" asChild>
-                  <Link to="/dashboard">Ver Demo</Link>
+                  <Link to="/dashboard">View Demo</Link>
                 </Button>
               </motion.div>
             </motion.div>
@@ -339,10 +338,10 @@ export default function LandingPage() {
               transition={{ duration: 0.5 }}
             >
               <h2 className="text-3xl font-bold tracking-tight text-foreground">
-                Tudo que voce precisa para controlar seus custos
+                Everything you need to control your costs
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-                Uma plataforma completa para monitorar, analisar e otimizar seus gastos com APIs de IA.
+                A complete platform to monitor, analyze, and optimize your AI spending.
               </p>
             </motion.div>
 
@@ -380,7 +379,7 @@ export default function LandingPage() {
                   <AnimatedCounter value={30} suffix="%" />
                 </p>
                 <p className="relative mt-3 text-sm text-muted-foreground">
-                  Reducao media de custos
+                  Average cost reduction
                 </p>
               </motion.div>
               <motion.div 
@@ -393,7 +392,7 @@ export default function LandingPage() {
                   <AnimatedCounter value={10} suffix="M+" />
                 </p>
                 <p className="relative mt-3 text-sm text-muted-foreground">
-                  Requisicoes monitoradas
+                  Requests monitored
                 </p>
               </motion.div>
               <motion.div 
@@ -406,7 +405,7 @@ export default function LandingPage() {
                   <AnimatedCounter value={500} suffix="+" />
                 </p>
                 <p className="relative mt-3 text-sm text-muted-foreground">
-                  Empresas confiam em nos
+                  Companies trust us
                 </p>
               </motion.div>
             </motion.div>
@@ -423,11 +422,11 @@ export default function LandingPage() {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-3xl font-bold tracking-tight text-foreground">
-              Pronto para otimizar seus custos de IA?
+              Ready to optimize your AI costs?
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-              Crie sua conta gratuita e comece a monitorar em menos de 5 minutos.
-              Nenhum cartao de credito necessario.
+              Create your free account and start monitoring in less than 5 minutes.
+              No credit card required.
             </p>
             <motion.div 
               className="mt-8"
@@ -436,7 +435,7 @@ export default function LandingPage() {
             >
               <Button size="lg" className="group" asChild>
                 <Link to="/signup">
-                  Criar Conta Gratuita
+                  Create Free Account
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </Button>
@@ -455,7 +454,7 @@ export default function LandingPage() {
             <span className="text-sm font-medium text-foreground">LLMetrics</span>
           </div>
           <p className="text-xs text-muted-foreground">
-            2026 LLMetrics. Todos os direitos reservados.
+            2026 LLMetrics. All rights reserved.
           </p>
         </div>
       </footer>
