@@ -1,10 +1,33 @@
 import { Link } from "react-router-dom"
 import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+import { Button } from "../../components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../../components/ui/card"
+import { Input } from "../../components/ui/input"
+import { Label } from "../../components/ui/label"
 import { Activity, Eye, EyeOff } from "lucide-react"
+
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000/api"
+
+async function handleLogin(e: React.FormEvent) {
+  e.preventDefault()
+
+  const res = await fetch(`${API_URL}/login`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+
+    })
+  })
+
+  const data = await res.json()
+
+  if (res.ok) {
+    localStorage.setItem("token", data.token)
+    window.location.href = "/dashboard"
+  } else {
+    console.error(data.error)
+  }
+}
 
 export default function LoginPage() {
   const [showPassword, setShowPassword] = useState(false)
@@ -26,10 +49,10 @@ export default function LoginPage() {
         <Card className="w-full max-w-md border-border/50 bg-card/50">
           <CardHeader className="text-center">
             <CardTitle className="text-2xl font-bold text-foreground">
-              Bem-vindo de volta
+              Welcome back
             </CardTitle>
             <CardDescription className="text-muted-foreground">
-              Entre na sua conta para acessar o dashboard
+              Sign in to your account to access the dashboard
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -39,19 +62,19 @@ export default function LoginPage() {
                 <Input
                   id="email"
                   type="email"
-                  placeholder="seu@email.com"
+                  placeholder="name@email.com"
                   className="bg-secondary/50"
                 />
               </div>
 
               <div className="flex flex-col gap-2">
                 <div className="flex items-center justify-between">
-                  <Label htmlFor="password">Senha</Label>
+                  <Label htmlFor="password">Password</Label>
                   <Link 
                     to="/forgot-password" 
                     className="text-xs text-primary hover:underline"
                   >
-                    Esqueceu a senha?
+                    Forgot your password?
                   </Link>
                 </div>
                 <div className="relative">
@@ -75,8 +98,8 @@ export default function LoginPage() {
                 </div>
               </div>
 
-              <Button type="submit" className="mt-2 w-full" asChild>
-                <Link to="/dashboard">Entrar</Link>
+              <Button type="submit" onSubmit={handleLogin} className="mt-2 w-full" asChild>
+                <Link to="/dashboard">Login</Link>
               </Button>
 
               <div className="relative my-2">
@@ -84,7 +107,7 @@ export default function LoginPage() {
                   <div className="w-full border-t border-border/50" />
                 </div>
                 <div className="relative flex justify-center text-xs">
-                  <span className="bg-card px-2 text-muted-foreground">ou continue com</span>
+                  <span className="bg-card px-2 text-muted-foreground">or continue with</span>
                 </div>
               </div>
 
@@ -120,9 +143,9 @@ export default function LoginPage() {
             </form>
 
             <p className="mt-6 text-center text-sm text-muted-foreground">
-              Nao tem uma conta?{" "}
+              Don't have an account?{" "}
               <Link to="/signup" className="text-primary hover:underline">
-                Criar conta
+                Create account
               </Link>
             </p>
           </CardContent>
@@ -132,7 +155,7 @@ export default function LoginPage() {
       {/* Footer */}
       <footer className="px-6 py-6 text-center">
         <p className="text-xs text-muted-foreground">
-          2024 LLMetrics. Todos os direitos reservados.
+          2024 LLMetrics. All rights reserved.
         </p>
       </footer>
     </div>
