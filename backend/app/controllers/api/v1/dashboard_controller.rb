@@ -31,6 +31,25 @@ class Api::V1::DashboardController < ApplicationController
     }
   end
 
+  def cost_over_time
+    days = params[:days].to_i > 0 ? params[:days].to_i : 7
+    range = (days.days.ago.to_date..Date.today)
+
+    data = Event
+      .where(created_at: range)
+      .group("DATE(created_at)")
+      .sum(:cost)
+
+    result = range.map do |date|
+      {
+        date: date,
+        cost: data[date] ? data[date].to_f : 0
+      }
+    end
+
+    render json: result
+  end
+
   private
 
   def authenticate!
