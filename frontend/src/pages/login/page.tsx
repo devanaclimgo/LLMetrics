@@ -63,7 +63,7 @@ export default function LoginPage() {
                   id="email"
                   type="email"
                   placeholder="name@email.com"
-                  className="bg-secondary/50"
+                  className="bg-secondary/50 text-black"
                 />
               </div>
 
@@ -82,7 +82,7 @@ export default function LoginPage() {
                     id="password"
                     type={showPassword ? "text" : "password"}
                     placeholder="••••••••"
-                    className="bg-secondary/50 pr-10"
+                    className="bg-secondary/50 pr-10 text-black"
                   />
                   <button
                     type="button"

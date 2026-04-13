@@ -70,7 +70,7 @@ export default function SignupPage() {
                   id="name"
                   type="text"
                   placeholder="Your name"
-                  className="bg-secondary/50"
+                  className="bg-secondary/50 text-black"
                 />
               </div>
 
@@ -80,7 +80,7 @@ export default function SignupPage() {
                   id="email"
                   type="email"
                   placeholder="your@email.com"
-                  className="bg-secondary/50"
+                  className="bg-secondary/50 text-black"
                 />
               </div>
 
@@ -90,7 +90,7 @@ export default function SignupPage() {
                   id="company"
                   type="text"
                   placeholder="Company name"
-                  className="bg-secondary/50"
+                  className="bg-secondary/50 text-black"
                 />
               </div>
 
@@ -101,7 +101,7 @@ export default function SignupPage() {
                     id="password"
                     type={showPassword ? "text" : "password"}
                     placeholder="••••••••"
-                    className="bg-secondary/50 pr-10"
+                    className="bg-secondary/50 pr-10 text-black"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                   />

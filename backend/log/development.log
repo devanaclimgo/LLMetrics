@@ -752,3 +752,651 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 9ms (Views: 1.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
 
 
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:07:17 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:07:17 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:07:17 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:07:17 -0300
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:07:17 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:07:17 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:07:17 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:07:17 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:07:17 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:07:17 -0300
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:07:17 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:07:17 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:07:30 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:07:30 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:07:30 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:07:30 -0300
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:07:30 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:07:30 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:10 -0300
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:10 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:10 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:10 -0300
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:10 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:10 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:12 -0300
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:12 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:12 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:12 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:12 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:12 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:12 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:12 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:12 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:12 -0300
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:12 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:12 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:14 -0300
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:14 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:14 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:14 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:14 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:14 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:14 -0300
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:14 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:14 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:14 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:14 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:14 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:14 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:14 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:14 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:14 -0300
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:14 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:14 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:26 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:26 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:26 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:26 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:26 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:26 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:27 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:27 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:27 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:27 -0300
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:27 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:27 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:27 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:27 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:27 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:27 -0300
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:27 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:27 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:27 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:27 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:27 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:27 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:27 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:27 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:28 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:28 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:28 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:28 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:28 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:28 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:30 -0300
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:30 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:30 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:30 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:30 -0300
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:30 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:30 -0300
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:30 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:30 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:30 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:30 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:30 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:37 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:37 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:37 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:08:37 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:08:37 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:08:37 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:10:26 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:10:26 -0300
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:10:26 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+Started GET "/api/v1/insights" for ::1 at 2026-04-13 16:10:26 -0300
+Started GET "/api/v1/cost_over_time" for ::1 at 2026-04-13 16:10:26 -0300
+Started GET "/api/v1/dashboard" for ::1 at 2026-04-13 16:10:26 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/application_controller.rb:1:in '<main>'
+app/controllers/api/v1/dashboard_controller.rb:1:in '<main>'
