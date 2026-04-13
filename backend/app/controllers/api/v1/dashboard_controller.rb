@@ -50,6 +50,74 @@ class Api::V1::DashboardController < ApplicationController
     render json: result
   end
 
+  def insights
+    insights = []
+
+    events = Event.where("created_at >= ?", 7.days.ago)
+
+    insights += high_cost_by_feature(events)
+    insights += expensive_models(events)
+    insights += possible_loops(events)
+
+    render json: insights
+  end
+
+  def high_cost_by_feature(events)
+    result = []
+
+    data = events.group(:feature).sum(:cost)
+
+    data.each do |feature, cost|
+      if cost > 5 # Threshold for high cost, can be adjusted
+        result << {
+          type: "warning",
+          message: "High cost detected in #{feature}",
+          value: cost.to_f
+        }
+      end
+    end
+
+    result
+  end
+
+  def expensive_models(events)
+    result = []
+
+    gpt4_usage = events.where(model: "gpt-4").count
+    total = events.count
+
+    return result if total == 0
+
+    if (gpt4_usage.to_f / total) > 0.7
+      result << {
+        type: "suggestion",
+        message: "High usage of GPT-4 detected. Consider using a cheaper model for some requests.",
+        value: gpt4_usage
+      }
+    end
+
+    result
+  end
+
+  def possible_loops(events)
+    result = []
+
+    repeated = events
+      .group(:user_id, :feature)
+      .having("COUNT(*) > 50")
+      .count
+
+    repeated.each do |(user_id, feature), count|
+      result << {
+        type: "warning",
+        message: "Possible loop detected for user #{user_id} in #{feature}",
+        value: count
+      }
+    end
+
+    result
+  end
+
   private
 
   def authenticate!
