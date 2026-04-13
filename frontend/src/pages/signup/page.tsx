@@ -1,19 +1,42 @@
 import { Link } from "react-router-dom"
 import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+import { Button } from "../../components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../../components/ui/card"
+import { Input } from "../../components/ui/input"
+import { Label } from "../../components/ui/label"
 import { Activity, Eye, EyeOff, Check } from "lucide-react"
+
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000/api"
+
+async function handleSignup(e: React.FormEvent) {
+  e.preventDefault()
+
+  const res = await fetch(`${API_URL}/signup`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+
+    })
+  })
+
+  const data = await res.json()
+
+  if (res.ok) {
+    localStorage.setItem("token", data.token)
+    window.location.href = "/dashboard"
+  } else {
+    console.error(data.error)
+  }
+}
 
 export default function SignupPage() {
   const [showPassword, setShowPassword] = useState(false)
   const [password, setPassword] = useState("")
 
   const passwordRequirements = [
-    { label: "Minimo 8 caracteres", met: password.length >= 8 },
-    { label: "Uma letra maiuscula", met: /[A-Z]/.test(password) },
-    { label: "Um numero", met: /[0-9]/.test(password) },
+    { label: "Minimum 8 characters", met: password.length >= 8 },
+    { label: "One uppercase letter", met: /[A-Z]/.test(password) },
+    { label: "One number", met: /[0-9]/.test(password) },
   ]
 
   return (
@@ -33,20 +56,20 @@ export default function SignupPage() {
         <Card className="w-full max-w-md border-border/50 bg-card/50">
           <CardHeader className="text-center">
             <CardTitle className="text-2xl font-bold text-foreground">
-              Criar sua conta
+              Create your account
             </CardTitle>
             <CardDescription className="text-muted-foreground">
-              Comece a monitorar seus custos de IA gratuitamente
+              Start monitoring your AI costs for free
             </CardDescription>
           </CardHeader>
           <CardContent>
             <form className="flex flex-col gap-5">
               <div className="flex flex-col gap-2">
-                <Label htmlFor="name">Nome completo</Label>
+                <Label htmlFor="name">Full Name</Label>
                 <Input
                   id="name"
                   type="text"
-                  placeholder="Seu nome"
+                  placeholder="Your name"
                   className="bg-secondary/50"
                 />
               </div>
@@ -56,23 +79,23 @@ export default function SignupPage() {
                 <Input
                   id="email"
                   type="email"
-                  placeholder="seu@email.com"
+                  placeholder="your@email.com"
                   className="bg-secondary/50"
                 />
               </div>
 
               <div className="flex flex-col gap-2">
-                <Label htmlFor="company">Empresa (opcional)</Label>
+                <Label htmlFor="company">Company (optional)</Label>
                 <Input
                   id="company"
                   type="text"
-                  placeholder="Nome da empresa"
+                  placeholder="Company name"
                   className="bg-secondary/50"
                 />
               </div>
 
               <div className="flex flex-col gap-2">
-                <Label htmlFor="password">Senha</Label>
+                <Label htmlFor="password">Password</Label>
                 <div className="relative">
                   <Input
                     id="password"
@@ -111,8 +134,8 @@ export default function SignupPage() {
                 )}
               </div>
 
-              <Button type="submit" className="mt-2 w-full" asChild>
-                <Link to="/dashboard">Criar Conta</Link>
+              <Button type="submit" onSubmit={handleSignup} className="mt-2 w-full" asChild>
+                <Link to="/dashboard">Create Account</Link>
               </Button>
 
               <div className="relative my-2">
@@ -120,7 +143,7 @@ export default function SignupPage() {
                   <div className="w-full border-t border-border/50" />
                 </div>
                 <div className="relative flex justify-center text-xs">
-                  <span className="bg-card px-2 text-muted-foreground">ou continue com</span>
+                  <span className="bg-card px-2 text-muted-foreground">or continue with</span>
                 </div>
               </div>
 
@@ -155,21 +178,21 @@ export default function SignupPage() {
               </div>
 
               <p className="mt-2 text-center text-xs text-muted-foreground">
-                Ao criar uma conta, voce concorda com nossos{" "}
+                By creating an account, you agree to our{" "}
                 <Link to="/terms" className="text-primary hover:underline">
-                  Termos de Servico
+                  Terms of Service
                 </Link>{" "}
-                e{" "}
+                and{" "}
                 <Link to="/privacy" className="text-primary hover:underline">
-                  Politica de Privacidade
+                  Privacy Policy
                 </Link>
               </p>
             </form>
 
             <p className="mt-6 text-center text-sm text-muted-foreground">
-              Ja tem uma conta?{" "}
+              Already have an account?{" "}
               <Link to="/login" className="text-primary hover:underline">
-                Entrar
+                Log in
               </Link>
             </p>
           </CardContent>
@@ -179,7 +202,7 @@ export default function SignupPage() {
       {/* Footer */}
       <footer className="px-6 py-6 text-center">
         <p className="text-xs text-muted-foreground">
-          2024 LLMetrics. Todos os direitos reservados.
+          2026 LLMetrics. All rights reserved.
         </p>
       </footer>
     </div>
