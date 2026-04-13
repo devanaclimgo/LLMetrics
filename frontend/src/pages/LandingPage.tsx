@@ -11,7 +11,7 @@ import {
   Bell,
   Code2
 } from "lucide-react"
-import { motion, useInView, easeInOut } from "framer-motion"
+import { motion, useInView } from "framer-motion"
 import { useRef, useEffect, useState } from "react"
 
 function AnimatedCounter({ value, suffix = "" }: { value: number; suffix?: string }) {
@@ -52,7 +52,7 @@ function HeroGraph() {
       pathLength: 1, 
       opacity: 1,
       transition: { 
-        pathLength: { duration: 2, ease: easeInOut },
+        pathLength: { duration: 2, ease: "easeInOut" as const },
         opacity: { duration: 0.5 }
       }
     }
